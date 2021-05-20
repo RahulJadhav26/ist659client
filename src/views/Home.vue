@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+      <div class="container ">
+        <b-jumbotron>
+          <template #header>Welcome to our Book Re-selling Market</template>
+
+          <template #lead>
+            This is a simple portal, Where students can list and Buy books from other students at refurbished rates.
+          </template>
+          <hr class="my-4">
+          <!-- <p>
+            It uses utility classes for typography and spacing to space content out within the larger
+            container.
+          </p> -->
+
+           <router-link to="/login"><b-button variant="primary" class="mr-2" >Buy Books</b-button></router-link>
+          <router-link to="/login"><b-button variant="success" >List a Book </b-button></router-link>
+        </b-jumbotron>
+      </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
+
   components: {
-    HelloWorld
   }
 }
 </script>
+<style scoped>
+.jumbotron{
+  background-color:#fd8e32  ! important;
+  border-radius:1.2rem;
+  margin-top:100px;
+}
+</style>

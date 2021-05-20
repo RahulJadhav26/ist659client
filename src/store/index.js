@@ -5,6 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    user: {
+      loginStatus: false,
+      data: {}
+    },
+    requests: []
   },
   mutations: {
   },
